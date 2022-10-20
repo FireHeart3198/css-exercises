@@ -1,0 +1,14 @@
+.loudmouth {
+    background-color: black;
+    color: hsl(0, 0%, 100%);;
+}
+
+.attentionstealer {
+    background-color: #ffff00;
+}
+
+.loudmouth,
+.attentionstealer {
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;
+}
