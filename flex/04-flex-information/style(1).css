@@ -1,0 +1,53 @@
+
+/*went a bit overboard on the flexing + at 100% looked the same but when minimised, vastly different*/
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex; /*don't really need all this*/
+  flex-direction: column;
+  align-items: center; /*in my code, i think this might be pointless?*/
+  gap: 20px; /*margin works here*/
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;  /*text-align under body would work for the whole page*/
+}
+
+.content {
+  display: flex;
+  justify-content: space-between; /*can just be center, leave the spacing upto gap*/
+  gap: 60px;
+}
+
+.plant {
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  max-width: 200px; /*need this to stop text from going onto one line at smaller zooms*/
+}
+
+.text {
+  text-align: center;
+}
+
+/* do not edit this footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+}
