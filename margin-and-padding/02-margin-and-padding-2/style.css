@@ -7,21 +7,65 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  padding: 10px;
 }
 
 .title {
   background: #e3f4ff;
+  padding: 10px;
 }
 
 .content {
   background: #e3f4ff;
+  padding: 10px;
+  margin: 10px;
 }
 
 .button-container {
   background: #e3f4ff;
 }
 
-button {
+/*button {
   background: white;
   border: 1px solid #eee;
 }
+
+body {
+  background: #eee;
+  font-family: sans-serif;
+  box-sizing: content-box;
+}
+
+.card {
+  width: 400px;
+  background: #fff;
+  margin: 16px auto;
+  border: #fff solid 10px; /*they did padding here instead*/
+/*}*/
+
+/*.title {
+  background: #e3f4ff;
+  margin-top: 0px;
+  padding: 10px;
+}
+
+.content {
+  background: #e3f4ff;
+  margin-top: -20px;
+  padding: 10px;
+}
+
+.button-container {
+  background: #e3f4ff;
+  margin: 10px auto 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  background: white;
+  border: 1px solid #eee;
+  display: block;
+  padding: 12px 30px;
+  margin: 0px auto;
+}*/

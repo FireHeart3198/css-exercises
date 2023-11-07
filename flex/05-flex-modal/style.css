@@ -20,7 +20,19 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  padding: 15px;
+  gap: 15px;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+} /*didn't need this, everything other than the top two items was laid out correctly on the right side, just needed margins to separate*/
+
+.top {
+  display: flex;
+} /*this could have had the other item nested in header*/
 
 .icon {
   color: royalblue;
@@ -63,4 +75,19 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.header {
+  flex: auto;
+  font-weight: bold;
+  font-size: 18px;
+  padding-top: 2px;
+}
+
+.info {
+  gap: 12px;
+}
+
+.text {
+  padding-bottom: 5px;
 }

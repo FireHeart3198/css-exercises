@@ -1,6 +1,10 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between; /*didn't get this, used margin instead, this is more consistent across all the items*/
+  align-items: center; /*put this in the wrong place*/
+  padding: 10px;
 }
 
 .logo {
@@ -9,11 +13,28 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  /*margin: auto; /*prob need to do other stuff first then this*//*fundamentally misunderstood the way things interact ie gap is solid like margin*/
 }
+
+/*.left-links {
+  /*attempt to use this to unlist list was not successful*/
+  /*display: flex;*/
+  /*justify-content: space-around; /*this was not the way to get space between links and neither was margin*/
+  /*gap: 10px; doesn't go here*/
+
+/*.right-links {
+  /*attempt to use this to unlist list was not successful*/
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  display: flex; /* this is the one that gets the list to unlist */
+  padding: 0; /*allows the left side items to center*/
+  /*align-items: center; /*should not be here, under the major container*/
+  /*padding: 22px; /*not too sure about this one -> nope cause using align-items to center*/
+  /*justify-content: space-around; /*this doesn't go here?*/
+  gap: 15px;/*forgot about the gap*/
+  margin: 0;
 }
 
 a {
