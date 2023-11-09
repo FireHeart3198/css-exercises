@@ -40,26 +40,28 @@ body {
   width: 300px;
   padding: 15px;
   flex: initial; /*check if this is needed*/
+  /* included margin (probably gap fulfils the same function in mine and that's probably why they don't need the stretch for align items but actually doesn't seem like it on testing) */
 }
 
 .content {
   display: flex;
-  flex: 1 1 auto;
+  flex: 1 1 auto; /*didn't seem to have much of a change from flex 1 in solution*/
 }
 
 ul {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 a {
   text-decoration: none;
   color: white;
+  font-size: 25px;
 }
 
 li {
-  padding-bottom: 15px;
+  padding-bottom: 15px; /*didn't make a difference from margin-bottom but prob best practice to have it as margin (pushing element out)*/
 }
 
 .info {
@@ -67,7 +69,7 @@ li {
   flex-flow: wrap;
   padding: 50px;
   /*justify-content: space-between; this spaces out items when zoom out*/
-  /*align-content: space-between; this made the items not stretch... think about why*/
+  /*align-content: space-between; this made the items not stretch... think about why cause it treated potential wrap text as there? maybe?*/
   align-items: stretch;
   gap: 35px;
 }
